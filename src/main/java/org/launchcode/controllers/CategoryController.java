@@ -25,7 +25,7 @@ public class CategoryController {
     private CategoryDao categoryDao;
 
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public String index(Model model, @RequestParam(defaultValue = "0")int id) {
+    public String index(Model model) {
 
         model.addAttribute("categories",categoryDao.findAll());
         model.addAttribute("title", "Categories");

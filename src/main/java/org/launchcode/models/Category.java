@@ -26,7 +26,7 @@ public class Category {
     @JoinColumn(name = "category_id")
     private List<Cheese> cheeses = new ArrayList<>();
 
-
+    //Constructors
     public Category(){};
 
     public Category(String name){
@@ -36,7 +36,7 @@ public class Category {
 
     }
 
-
+    //getters and setters
     public int getId() {
         return id;
     }

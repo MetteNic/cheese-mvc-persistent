@@ -30,6 +30,7 @@ public class Cheese {
     private List<Menu> menus;
 
 
+    //constructors
     public Cheese(String name, String description) {
         this.name = name;
         this.description = description;
@@ -37,6 +38,8 @@ public class Cheese {
 
     public Cheese() { }
 
+
+    //getters and setters
     public int getId() {
         return id;
     }
